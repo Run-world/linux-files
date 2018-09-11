@@ -34,40 +34,41 @@ int socket_init()
 		return EXIT_FAILURE;
 	}
     printf("bind is ok!\n");
+		/*异步*/
+	listen (sock_fd, LIS_NUM);
 
 	return sock_fd;
 }
 
-void* thread(void *lis_fd)
+void*  thread(void *lis_fd)
 {
-		struct sockaddr_in theiraddr; //client's message save
-		int sin_size = sizeof(struct sockaddr_in);
-		int *socfd = (int *)lis_fd;
-		int new_fd;
-		new_fd = accept(*socfd, (struct sockaddr *)&theiraddr, &sin_size);
-		if(-1 == new_fd)
-		{
-		 perror("accept");
-		 return;
-		}
-
-	printf("connect is ok\nclient IP:%s",(char *)inet_ntoa(theiraddr.sin_addr));
-	printf(" port:%u\n", theiraddr.sin_port);
-	send(new_fd, "hello world", 12, 0);
+	int *socfd = (int *)lis_fd;
+	send(*socfd, "hello world", 12, 0);
 	
 }
 
 void main(int args, char **agrv)
 {
+	struct sockaddr_in theiraddr; //client's message save
+	int sin_size = sizeof(struct sockaddr_in);
+	int new_fd;
 	pthread_t id;
 
 	int sock_fd = socket_init();
 
 	while(1)
 	{
-		listen (sock_fd, LIS_NUM);
+		new_fd = accept(sock_fd, (struct sockaddr *)&theiraddr, &sin_size);
+		if(-1 == new_fd)
+		{
+		 perror("accept");
+		 return;
+		}
 
-		int ret = pthread_create(&id, NULL, thread,(void *)&sock_fd);
+	   printf("connect is ok\nclient IP:%s",(char *)inet_ntoa(theiraddr.sin_addr));
+	   printf(" port:%u\n", theiraddr.sin_port);
+
+		int ret = pthread_create(&id, NULL, thread,(void *)&new_fd);
 		if(0 != ret)
 		{
 			printf("thread create is fail\n");
