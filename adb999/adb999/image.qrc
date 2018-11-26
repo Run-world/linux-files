@@ -1,0 +1,39 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/background.jpg</file>
+        <file>image/bkg1.jpg</file>
+        <file>image/log.bmp</file>
+        <file>image/pic.jpg</file>
+        <file>image/prc.jpg</file>
+        <file>image/u=2563298963,1942532160&amp;fm=27&amp;gp=0.jpg</file>
+        <file>image/u=3041441088,3392435469&amp;fm=27&amp;gp=0.jpg</file>
+        <file>image/unionman.png</file>
+        <file>image/{3D8AE573-C28C-4C12-AFB1-2C0DC78E2781}.png</file>
+        <file>image/{7C241B57-AE5D-4346-8AE8-FE4F11A2145F}.png</file>
+        <file>image/{8F5CD693-CFBA-469B-A5E3-EEDC41A51812}.png</file>
+        <file>image/{11EC3662-B30F-4310-A013-9B6CDAF9A979}.png</file>
+        <file>image/{88526878-2C2F-4DFF-B930-B2D0BCC41506}.png</file>
+        <file>image/{C7A2EE29-B2F0-4F49-8D4D-20CF3686E28A}.png</file>
+        <file>image/{CBF6E21C-2DD9-4A74-8C9B-FB60085B7B40}.png</file>
+        <file>image/{EADC11A9-EED8-4EC8-B72D-C38BDED700DF}.png</file>
+        <file>image/{EEF5F8AF-50D3-4F61-A1E3-D50080F9304F}.png</file>
+        <file>image/{F1AB7A98-D4E7-4664-BAF4-01C347389B94}.png</file>
+        <file>image/{F95B5ADC-12F5-4725-9136-863A805F14EE}.png</file>
+        <file>image/timg.jpg</file>
+        <file>image/{72B68309-AB76-4EF4-A86A-F1BD8DBA47D3}.png</file>
+        <file>image/1edbc306eefcc8e4ebeea55b463e51d0.png</file>
+        <file>image/6ac79afdfde9aa2c248bb13f3e66469f.png</file>
+        <file>image/440e6093645d1aec04cd923b5eaf5e96.png</file>
+        <file>image/2460f450e81d1d7d98b9ffae8683cd1d.png</file>
+        <file>image/590492f17a157d454fe651176fa409d7.png</file>
+        <file>image/9292795619e2f638d2ccb572d2b58826.png</file>
+        <file>image/a2c20863762b72beaf1939355ba5654e.png</file>
+        <file>image/abd2226a2ffaf01e16cad751d04ea9f0.png</file>
+        <file>image/bbeca6cdb1e1dea6459ba412e37b2dcb.png</file>
+        <file>image/0a07910d0b2afa3b99f6b81d2a98b205.png</file>
+        <file>image/255d4ca0dc08d6f8b816e4e813b85c19.png</file>
+        <file>image/a1fb36ac3daf156829e3427138eac76f.png</file>
+        <file>image/da559f2edb0bd33f708a4b982a1cba37.png</file>
+        <file>image/log2.ico</file>
+    </qresource>
+</RCC>
